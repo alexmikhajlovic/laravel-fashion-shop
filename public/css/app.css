@@ -10942,3 +10942,33 @@ a.text-dark:focus {
   }
 }
 
+.dresses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dresses .dress-box {
+  width: 400px;
+  height: 600px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.dresses .dress-box img {
+  height: 200px;
+}
+
+.dresses .dress-box .long-string {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+i {
+  padding: 0 10px;
+}
+

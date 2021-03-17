@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Dress;
+
 class HomeController extends Controller
 {
     public function index() {
@@ -11,7 +13,11 @@ class HomeController extends Controller
     }
 
     public function products() {
-        return view('products');
+        $data_dress = Dress::all();
+        $data = [
+            'dresses' => $data_dress
+        ];
+        return view('products', $data);
     }
 
     public function about() {
